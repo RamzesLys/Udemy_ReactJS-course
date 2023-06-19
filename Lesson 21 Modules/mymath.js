@@ -23,5 +23,7 @@ class Graph {
 const PI = 3.1415;
 
 export {
-  add, subtract, multiply, divide
+  add, subtract, multiply, divide, PI
 }
+
+export default Graph
