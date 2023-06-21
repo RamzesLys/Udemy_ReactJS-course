@@ -5,10 +5,11 @@ import {createRoot} from 'react-dom/client';
 const root = createRoot(document.getElementById('root'));
 
 const TodoList = () => {
+  const items = ['Drink coffee', 'Build Awesome App']; 
   return (
   <ul>
-    <li>Learn React</li>
-    <li>Build Awesome App</li>
+    <li>{items[0]}</li>
+    <li>{items[1]}</li>
   </ul>
   )
 }
@@ -20,17 +21,27 @@ const AppHeader = () => {
 }
 
 const SearchPanel = () => {
+
+  const searchText = 'Type here to search';
+  const searchStyle = {
+    fontSize: '20px'
+  }
   return (
-    <input placeholder='search'/>
+    <input style={searchStyle} 
+    placeholder={searchText}/>
   )
 }
 
 const App = () => {
- return (
+
+  const value = '<script>alert("")</script>';
+
+  return (
   <div>
-  <AppHeader/>
-  <SearchPanel/>
-  <TodoList/>
+    {value}
+    <AppHeader/>
+    <SearchPanel/>
+    <TodoList/>
   </div>
  )
 }
