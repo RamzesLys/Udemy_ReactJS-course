@@ -1,4 +1,5 @@
 import React from 'react';
+import './search-panel.css';
 
 const SearchPanel = () => {
 
@@ -7,8 +8,12 @@ const SearchPanel = () => {
     fontSize: '20px'
   }
   return (
-    <input style={searchStyle} 
-    placeholder={searchText}/>
+    <input type="text" 
+    className="form-control search-input"
+    // style={searchStyle} 
+    // placeholder={searchText}
+    placeholder='Type to search'
+    />
   )
 };
 
